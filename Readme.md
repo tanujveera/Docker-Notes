@@ -105,6 +105,11 @@ docker start [container_name]
 
 ## Docker Compose
 
+A docker-compose.yaml file is a configuration file used with Docker Compose, which is a tool for defining and running multi-container Docker applications.
+It is written in YAML (YAML Ain't Markup Language) format and defines the services, networks, volumes, and other configurations needed to run a multi-container application.
+docker-compose.yaml files allow you to define the relationships between different containers, specify port mappings, volume mounts, environment variables, and other settings.
+Docker Compose uses the docker-compose.yaml file to orchestrate the deployment and management of multiple Docker containers as a single application stack.
+
 ```sh
 docker compose [OPTIONS] COMMAND
 docker compose -f docker-compose.yaml up
@@ -159,6 +164,11 @@ docker compose -f docker-compose.yaml up
 ---
 
 # Dockerfile
+
+A Dockerfile is a text file that contains a series of instructions for building a Docker image.
+It defines the steps needed to create an image, including specifying the base image, adding dependencies, configuring environment variables, and running commands.
+Dockerfiles are used with the docker build command to build Docker images.
+They are typically used for defining the build process for a single Docker image.
 
 ```sh
 FROM python:3-alpine3.15
