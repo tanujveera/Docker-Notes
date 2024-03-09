@@ -46,6 +46,13 @@ or
 docker container ps
 ```
 
+## List Images
+```sh
+docker ps
+or
+docker image ls
+```
+
 ## Run a image to generate a container
 
 ```sh
